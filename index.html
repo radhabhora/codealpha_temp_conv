@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Wizard </title>
+    <link rel="icon" type="image/x-icon" href="/favicon/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h1 id="fa">Temperature Wizard - A Temperature Converter</h1>
+        <form action="" id="tempCalc" onsubmit="calculateTemp(); return false">
+            <label for="" id="heading">Enter Your Temperature</label>
+            <div class="temp">
+                <input type="number" required="true" name="celcius" id="temp"
+                    placeholder="Enter Temperature in Celcius">
+
+                <div class="temp">
+                    <select name="temp_diff" class="select" id="temp_diff">
+                        <option value="cel"><span>&#176;</span>Celsius</option>
+                        <option value="fah"><span>&#176;</span>Fahrenheit</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger d-flex justify-content-center mx-auto my-2">Submit</button>
+            <br />
+            <span id="resultContainer"></span>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: linear-gradient(90deg, rgba(93, 99, 204, 1) 0%, rgba(245, 240, 242, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    columns: white;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    background: rgba(0, 212, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 85%;
+    max-width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 77px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.temp {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 100%;
+    font-family: monospace;
+    padding: 4px;
+    background: rgba(0, 212, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: darkblue;
+    font-size: 18px;
+    outline: none;
+}
+
+input::placeholder {
+    color: green;
+}
+
+/* Responsive CSS */
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    input {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 60%;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+select {
+    height: 5vh;
+    width: 10vw;
+}
+
+button {
+    margin-left: 38%;
+    font-size: larger;
+}
+
+#heading {
+    display: flex;
+    justify-content: center;
+}
+
+#resultContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
